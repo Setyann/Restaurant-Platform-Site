@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Restaurant Platform</title>
+    <meta name="description"
+        content="QR-меню и заказы со стола для ресторанов. Гость заказывает сам, персонал видит заказы на экране.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg-fx" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="grid"></span>
+    </div>
+
+    <header>
+        <div class="wrap">
+            <div class="logo">Restaurant Platform</div>
+            <nav class="lang" aria-label="Language">
+                <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+                <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                <button type="button" data-lang="hy" aria-pressed="false">HY</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <div class="eyebrow" data-i="heroEyebrow"></div>
+                    <h1 data-i="heroTitle"></h1>
+                    <p class="lead" data-i="heroLead"></p>
+                    <div class="buttons">
+                        <a class="btn" href="#demo" data-i="ctaDemo"></a>
+                        <a class="btn ghost" href="#plans" data-i="ctaPlans"></a>
+                    </div>
+                </div>
+
+                <div class="preview" aria-hidden="true">
+                    <div class="phone">
+                        <div class="phone-top" data-i="pvTable"></div>
+                        <div class="pv-item">
+                            <span data-i="pvItem1"></span>
+                            <span class="pv-qty">×2</span>
+                        </div>
+                        <div class="pv-item">
+                            <span data-i="pvItem2"></span>
+                            <span class="pv-qty">×1</span>
+                        </div>
+                        <button class="pv-send" type="button" data-i="pvSend"></button>
+
+                        <div class="pv-status">
+                            <div class="pv-label" data-i="pvStatusLabel"></div>
+                            <div class="pv-steps">
+                                <span class="done"></span>
+                                <span class="done"></span>
+                                <span class="now"></span>
+                                <span></span>
+                            </div>
+                            <div class="pv-state" data-i="pvState"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how">
+            <div class="wrap">
+                <h2 data-i="howTitle"></h2>
+                <div class="steps">
+                    <div class="card">
+                        <div class="num">01</div>
+                        <h3 data-i="step1Title"></h3>
+                        <p data-i="step1Text"></p>
+                    </div>
+                    <div class="card">
+                        <div class="num">02</div>
+                        <h3 data-i="step2Title"></h3>
+                        <p data-i="step2Text"></p>
+                    </div>
+                    <div class="card">
+                        <div class="num">03</div>
+                        <h3 data-i="step3Title"></h3>
+                        <p data-i="step3Text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans">
+            <div class="wrap">
+                <h2 data-i="plansTitle"></h2>
+                <div class="plans">
+                    <div class="card plan">
+                        <span class="tag" data-i="freeTag"></span>
+                        <h3 data-i="freeName"></h3>
+                        <p class="note" data-i="freeNote"></p>
+                        <ul>
+                            <li data-i="freeF1"></li>
+                            <li data-i="freeF2"></li>
+                        </ul>
+                    </div>
+                    <div class="card plan featured">
+                        <span class="tag" data-i="stdTag"></span>
+                        <h3 data-i="stdName"></h3>
+                        <p class="note" data-i="stdNote"></p>
+                        <ul>
+                            <li data-i="stdF1"></li>
+                            <li data-i="stdF2"></li>
+                            <li data-i="stdF3"></li>
+                        </ul>
+                    </div>
+                    <div class="card plan">
+                        <span class="tag" data-i="proTag"></span>
+                        <h3 data-i="proName"></h3>
+                        <p class="note" data-i="proNote"></p>
+                        <ul>
+                            <li data-i="proF1"></li>
+                            <li data-i="proF2"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2 data-i="faqTitle"></h2>
+                <div class="faq">
+                    <details>
+                        <summary data-i="q1"></summary>
+                        <p data-i="a1"></p>
+                    </details>
+                    <details>
+                        <summary data-i="q2"></summary>
+                        <p data-i="a2"></p>
+                    </details>
+                    <details>
+                        <summary data-i="q3"></summary>
+                        <p data-i="a3"></p>
+                    </details>
+                    <details>
+                        <summary data-i="q4"></summary>
+                        <p data-i="a4"></p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo">
+            <div class="wrap">
+                <h2 data-i="demoTitle"></h2>
+                <p class="lead demo-lead" data-i="demoLead"></p>
+                <form id="demoForm">
+                    <label>
+                        <span data-i="fName"></span>
+                        <input name="restaurant" required data-ph="phName">
+                    </label>
+                    <label>
+                        <span data-i="fCity"></span>
+                        <input name="city" data-ph="phCity">
+                    </label>
+                    <label>
+                        <span data-i="fContact"></span>
+                        <input name="contact" required data-ph="phContact">
+                    </label>
+                    <label>
+                        <span data-i="fTables"></span>
+                        <input name="tables" inputmode="numeric" data-ph="phTables">
+                    </label>
+                    <label class="full">
+                        <span data-i="fMessage"></span>
+                        <textarea name="message" data-ph="phMessage"></textarea>
+                    </label>
+                    <div class="full">
+                        <button class="btn" type="submit" data-i="fSubmit"></button>
+                        <p class="hint" data-i="fHint"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Restaurant Platform</div>
+                    <p data-i="footerAbout"></p>
+                </div>
+                <div>
+                    <h4 data-i="footerShow"></h4>
+                    <ul class="footer-links">
+                        <li><a href="https://setyann.github.io/Restaurant-Platform/?restaurant=demo" target="_blank"
+                                rel="noopener" data-i="footerMenu"></a></li>
+                        <li><a href="#how" data-i="footerHow"></a></li>
+                        <li><a href="#plans" data-i="footerPlans"></a></li>
+                        <li><a href="#demo" data-i="footerDemo"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 data-i="footerCreator"></h4>
+                    <ul class="footer-links">
+                        <li><a href="https://setyann.github.io/" target="_blank" rel="noopener">Setyann</a></li>
+                        <li><a href="https://github.com/Setyann" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Setyann. <span data-i="footerRights"></span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
