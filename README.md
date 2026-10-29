@@ -98,4 +98,5 @@ The system has been tested on a test database and in the browser. It has not yet
 
 ## License
 
-Private project. All rights reserved.
+All rights reserved. The source code is private and is not published.
+Use of the system requires a written agreement with the author.
